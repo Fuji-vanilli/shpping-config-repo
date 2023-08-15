@@ -1,0 +1,12 @@
+server:
+  port: 7110
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/SH-ORDER-DB
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7010/eureka/
