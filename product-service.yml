@@ -5,3 +5,9 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/SH-PRODUCT-DB
+
+
+eureka:
+  client:
+    urlService:
+      defaultZone: http://localhost:7010/eureka/
