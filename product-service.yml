@@ -1,11 +1,10 @@
 server:
-  port: 7100
+  port: 7105
 
 spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/SH-PRODUCT-DB
-
 
 eureka:
   client:
