@@ -10,3 +10,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:7010/eureka/
+
+product-service:
+  ribbon:
+    listOfServers: localhost:7121, localhost:7122
