@@ -1,0 +1,13 @@
+server:
+  port: 7130
+
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/SH-ANALYSIS-DB
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7100/eureka/
