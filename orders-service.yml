@@ -5,7 +5,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://http://localhost:SH-ORDERS-DB
+      uri: mongodb://http://localhost:27017/SH-ORDERS-DB
 
 eureka:
   client:
