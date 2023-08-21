@@ -1,0 +1,7 @@
+server:
+  port: 7020
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7010/eureka/
