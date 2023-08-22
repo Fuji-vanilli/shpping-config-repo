@@ -22,6 +22,6 @@ spring:
     gateway:
       routes:
         - id: order-service
-          uri: http://ORDER-SERVICE
+          uri: lb://ORDER-SERVICE
           predicates:
-            - Path= api/order-line, api/order
+            - Path= /api/order-line, /api/order
