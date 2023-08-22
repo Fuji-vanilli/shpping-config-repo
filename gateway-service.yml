@@ -22,6 +22,10 @@ spring:
     gateway:
       routes:
 #order service
+        - id: inventory-service
+          uri: lb://INVENTORY-SERVICE
+          predicates:
+            - Path=/api/**
         - id: order-service
           uri: lb://ORDER-SERVICE
           predicates:
@@ -32,7 +36,4 @@ spring:
           predicates:
             - Path=/api/**
 #inventory service
-        - id: inventory-service
-          uri: lb://INVENTORY-SERVICE
-          predicates:
-            - Path=/api/**
+
