@@ -17,10 +17,11 @@ management:
     circuit-breakers:
       enabled: true
   endpoints:
-    - web:
-        exposure:
-          include: *
-    - health:
+    web:
+      exposure:
+        include: *
+  endpoint:
+    health:
         show-details: always
 
 #resilience4j properties
