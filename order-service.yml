@@ -23,14 +23,14 @@ management:
 
 #resilience4j properties
 resilience4j:
-  circuit-breaker:
+  circuitbreaker:
     instances:
       inventory:
-        - registerHealthIndicator: true
-        - event-consumer-buffer-size: 10
-        - slidingWindowType: COUNT_BASED
-        - slidingWindowSize: 5
-        - failureRateThreshold: 50
-        - waitDurationInOpenState: 5s
-        - permittedNumberOfCallsInHalfOpenState: 3
-        - automaticTransitionFromOpenToHalfOpenEnabled: true
+        registerHealthIndicator: true
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5000
+        permittedNumberOfCallsInHalfOpenState: 3
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        eventConsumerBufferSize: 10
