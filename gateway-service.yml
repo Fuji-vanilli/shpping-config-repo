@@ -14,7 +14,7 @@ logging:
         cloud:
           - gateway:
             route:
-              RouteDefinitionLocator: INFO
+              RouteDefinitionLocator: INFO 
           - gateway: TRACE
 
 spring:
