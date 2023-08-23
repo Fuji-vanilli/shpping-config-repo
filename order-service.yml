@@ -13,6 +13,9 @@ eureka:
 
 #actuator
 management:
+  health:
+    circuitbreakers:
+      enabled: true
   endpoint:
     health:
       show-details: always
