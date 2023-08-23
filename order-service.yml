@@ -23,7 +23,7 @@ management:
 
 #resilience4j properties
 resilience4j:
-  circuit-breaker:
+  circuitbreaker:
     instances:
       inventory:
         registerHealthIndicator: true
