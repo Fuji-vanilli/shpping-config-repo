@@ -11,6 +11,11 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:7010/eureka/
 
+logging:
+  level:
+    io.github.resilience4j: DEBUG
+
+
 #actuator
 management:
   health:
