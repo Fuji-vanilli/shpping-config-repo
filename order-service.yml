@@ -13,16 +13,13 @@ eureka:
 
 #actuator
 management:
-  health:
-    circuit-breakers:
-      enabled: true
+  endpoint:
+    health:
+      show-details: always
   endpoints:
     web:
       exposure:
-        include: *
-  endpoint:
-    health:
-        show-details: always
+        include: "*"
 
 #resilience4j properties
 resilience4j:
