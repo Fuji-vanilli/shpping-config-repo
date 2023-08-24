@@ -36,3 +36,16 @@ spring:
           uri: lb://inventory-service
           predicates:
             - Path= /api/inventory/**
+
+  security:
+    oauth2:
+      resourceServer:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/shopping-realm
+          jwk-set-url: ${spring.security.oauth2.resourceServer.jwt.issuer-uri}/protocol/openid-connect/certs
+
+jwt:
+  auth:
+    converter:
+      resource-id: order-client
+      principal-attribute: preferred_name
