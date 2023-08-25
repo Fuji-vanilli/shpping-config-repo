@@ -1,11 +1,16 @@
 server:
   port: 7020
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:7010/eureka/
-
 
 logging:
   level:
