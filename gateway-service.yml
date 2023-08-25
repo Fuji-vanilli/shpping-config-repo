@@ -43,7 +43,7 @@ spring:
           predicates:
             - Path= /api/inventory/**
 
-  security:
+ # security:
     oauth2:
       resourceServer:
         jwt:
