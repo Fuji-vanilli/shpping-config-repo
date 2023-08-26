@@ -43,6 +43,10 @@ spring:
           predicates:
             - Path= /api/inventory/**
 
+    cloud:
+      compatibility-verifier:
+        enabled: false
+
   sleuth:
     sampler:
       probability: 1.0
