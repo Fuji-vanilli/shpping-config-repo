@@ -7,6 +7,10 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/SH-INVENTORY-DB
 
+  cloud:
+    compatibility-verifier:
+      enabled: false
+
   sleuth:
     sampler:
       probability: 1.0

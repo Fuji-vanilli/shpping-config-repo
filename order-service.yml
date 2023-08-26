@@ -6,6 +6,10 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/SH-ORDER-DB
 
+  cloud:
+    compatibility-verifier:
+      enabled: false
+
   sleuth:
     sampler:
       probability: 1.0
