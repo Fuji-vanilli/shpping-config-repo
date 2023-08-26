@@ -7,6 +7,10 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/SH-ANALYSIS-DB
 
+  cloud:
+    compatibility-verifier:
+      enabled: false
+
 eureka:
   client:
     serviceUrl:
