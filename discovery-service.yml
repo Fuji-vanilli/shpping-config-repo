@@ -9,9 +9,7 @@ eureka:
   username: ${EUREKA_USERNAME:eureka}
   password: ${EUREKA_PASSWORD:1234}
 
-spring:
-  sleuth:
-    sampler:
+management:
+  tracing:
+    sampling:
       probability: 1.0
-  zipkin:
-    base-url: http://localhost:9411

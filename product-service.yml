@@ -15,9 +15,7 @@ eureka:
     serviceUrl:
       defaultZone:  http://eureka:1234@localhost:8761/eureka/
 
-tracing:
-  enabled: true
-  type: zipkin
-  zipkin:
-    host: localhost
-    port: 9411
+management:
+  tracing:
+    sampling:
+      probability: 1.0
