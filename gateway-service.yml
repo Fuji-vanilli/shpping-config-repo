@@ -78,7 +78,7 @@ jwt:
 resilience4j:
   circuitbreaker:
     instances:
-      productService:
+      inventoryService:
         registerHealthIndicator: true
         slidingWindowType: COUNT_BASED
         slidingWindowSize: 5
