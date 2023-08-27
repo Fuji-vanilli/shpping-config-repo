@@ -61,6 +61,11 @@ spring:
           uri: lb://inventory-service
           predicates:
             - Path= /api/inventory/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: inventoryService
+                fallbackuri: forward:/inventoryFallback
 
   security:
     oauth2:
