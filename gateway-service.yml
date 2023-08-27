@@ -47,9 +47,6 @@ spring:
           predicates:
             - Path= /api/inventory/**
 
-    compatibility-verifier:
-      enabled: false
-
   security:
     oauth2:
       resourceServer:
