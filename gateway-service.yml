@@ -43,7 +43,7 @@ spring:
             - name: CircuitBreaker
               args:
                 name: inventoryService
-                fallbackUri: forward:/inventoryServiceFallback
+                fallbackuri: forward:/inventoryServiceFallback
 
         #product service API
         - id: product-service
@@ -54,7 +54,7 @@ spring:
             - name: CircuitBreaker
               args:
                 name: inventoryService
-                fallbackUri: forward:/inventoryServiceFallback
+                fallbackuri: forward:/inventoryServiceFallback
 
         #inventory service API
         - id: inventory-service
