@@ -29,3 +29,4 @@ spring:
           json:
             type:
               mapping: event:com.shoppingms.notificationservice.dto.OrderPlacedEvent
+
