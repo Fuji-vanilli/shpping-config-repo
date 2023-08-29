@@ -16,17 +16,25 @@ management:
 
 #kafka properties
 spring:
-  kafka:
-    bootstrap-servers: localhost:9092
-    template:
-      default-topic: notificationTopic
-    consumer:
-      group-id: notificationId
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring:
-          json:
-            type:
-              mapping: event:com.shoppingms.notificationservice.dto.OrderPlacedEvent
+  cloud:
+    stream:
+      bindings:
+        notificationEventConsumer-in-0:
+          destination: productTopic
+
+    function:
+      definition: notificationEventConsumer
+  ##kafka:
+  # bootstrap-servers: localhost:9092
+  # template:
+  #   default-topic: notificationTopic
+  #  consumer:
+  #   group-id: notificationId
+  #    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  #   value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+  #   properties:
+  #     spring:
+  #        json:
+  #        type:
+#           mapping: event:com.shoppingms.notificationservice.dto.OrderPlacedEvent
 
