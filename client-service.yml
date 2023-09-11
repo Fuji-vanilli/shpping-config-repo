@@ -1,0 +1,13 @@
+server:
+  port: 7070
+
+spring:
+  data:
+    mongodb:
+      uri: mongo:http://localhost:27017/CLIENT-DB
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:1234@localhost:8761/eureka/
