@@ -24,6 +24,7 @@ spring:
 
     function:
       definition: notificationEventConsumer
+
   ##kafka:
   # bootstrap-servers: localhost:9092
   # template:
