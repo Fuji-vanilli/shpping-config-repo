@@ -6,7 +6,6 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/SH-CLIENT-DB
 
-
 eureka:
   client:
     serviceUrl:
@@ -17,3 +16,7 @@ management:
     web:
       exposure:
         include: "*"
+
+
+jwt:
+  access: "test"
