@@ -1,4 +1,4 @@
-server:
+    server:
   port: 7020
 
 management:
@@ -66,6 +66,9 @@ spring:
               args:
                 name: inventoryService
                 fallbackuri: forward:/inventoryFallback
+
+  main:
+    allow-bean-definition-overriding: true
 
   security:
     oauth2:
